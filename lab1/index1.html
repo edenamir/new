@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page title</title>
+    <h1>Horse Image</h1>
+    <h2>This is the horse</h2> 
+    
+</head>
+<body>
+    <img src="HorseImage.jpeg"
+        alt="horse"
+        width="300"
+        height="200">
+
+    <ol>
+        <li>horse1</li>
+        <li>horse2</li>
+    </ol>
+
+    <form action="/action.php" autocomplete="on">
+        First name:<input type="text" name="fname"><br>
+        Last name:<input type="text" name="lname"><br>
+        <input  type="submit">
+    </form>
+
+    <p>Click the button to discover your loction</p>
+
+    <button onclick="getLoction()">Try It</button>
+
+    <P id="demo"></P>
+
+    <script>
+        var x = document.getElementById("demo");
+
+        function getLoction(){
+            if (navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } 
+            else
+            {
+                x.innerHTML = "Geolocation is not supported by this browser";
+            }
+        }
+
+        function showPosition(position)
+        {
+            x.innerHTML = "Vatitude: " + position.coords.latitude + 
+            "<br>Longitude: " + position.coords.longitude;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
+
+  <title>SignUp</title>
+</head>
+
+<body>
+  <div class="center">
+    <h1 id="header">Sign Up</h1>
+
+    <form id="registration-form">
+      <div class="textfield">
+        <input type="text" id="email" required>
+        <span></span>
+        <label>Username</label>
+      </div>
+      <div class="textfield">
+        <input type="Password" id="password" required>
+        <span></span>
+        <label>Password</label>
+      </div>
+      <div class="textfield">
+        <input type="Password" id="Confirmation" required>
+        <span></span>
+        <label>Confirmation</label>
+      </div>
+      <!-- <input type="submit" value="Login"> -->
+      <button onclick="validateAllFields(true)" class="submitButt">Login</button>
+      <div class="signup_link">Already a member?
+        <a href="signin.html"> Sing-in</a>
+      </div>
+    </form>
+  </div>
+
+
+</body>
+
+</html>

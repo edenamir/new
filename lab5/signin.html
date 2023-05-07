@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="center">
+      <h1 id="header">Login</h1>
+        <form id="registration-form">
+          <div class="textfield">
+            <input type="text" id="email" required>
+            <span></span>
+            <label>Username</label>
+          </div>
+          <div class="textfield">
+            <input type="Password" id="password" required>
+            <span></span>
+            <label>Password</label>
+          </div>
+          <div class="pass">Forgot Password?</div>
+          <!-- <input type="submit" value="Login"> -->
+          <button onclick="validateAllFields(false)" class="submitButt">Login</button>
+          <div class="signup_link">New user?
+            <a href="signup.html"> SingUp</a>
+          </div>
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+  <div class="left">
+    <h1 id="header" class="contactHeader">CONTACT US</h1>
+
+      <form id="registration-form">
+        <div class="textfield">
+          <input type="text" id="name" required>
+          <span></span>
+          <label>Name*</label>
+        </div>
+        <div class="textfield">
+          <input type="text" id="email" required>
+          <span></span>
+          <label>Email*</label>
+        </div>
+        <div class="textfield">
+            <select name="options" id="options" class="selection" required>
+                <option selected disabled>Contact is concerning:*</option>
+                <option value="volvo">volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+        </div>
+        <div class="textfield">
+            <input type="text" id="subject" required>
+            <span></span>
+            <label>Subject*</label>
+        </div>
+        <!-- <input type="submit" value="Login"> -->
+        <button onclick="validateAllFields(true)" class="submitButtFotContact">SUBMIT</button>
+      </form>
+  </div>
+
+  <div class="right">
+    <label>NEED 24/7 SUPPORT</label>
+    <br><br>
+    <button class="contcat">CONTACT SUPPORT</button>
+  </div>
+
+
+</body>
+</html>

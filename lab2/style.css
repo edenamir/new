@@ -1,0 +1,34 @@
+body {
+    font-family:'Courier New', Courier, monospace; 
+    background-color: rgb(255, 250, 243);
+    /* background-image: url(img.jpg); */
+    
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}	
+/* #header {
+    height:232px;
+}
+#footer {
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 10px;
+} */
+
+#demo {
+    color: coral;
+}
+
+p {
+    color: rgb(226, 43, 43);
+    font-style: italic;
+    font-weight: bold;
+}
+
+#everything {
+    font-size: 20px;
+}

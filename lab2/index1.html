@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="everything">
+    <title>Page title</title>
+    <h1 style="text-align: center; font-size: 5em;">Horse Image</h1>
+    <h2 style="margin-left: 200px;">This is<span style="color: rgb(254, 12, 12);"> the horse:</span> </h2> 
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="everything">
+    <img src="HorseImage.jpeg"
+        alt="horse"
+        width="300"
+        height="200"
+        class="center">
+
+    <ol>
+        <li>horse1</li>
+        <li>horse2</li>
+    </ol>
+    <style>
+        form {
+            color: green;
+            text-align: center;
+        }
+    </style>
+
+    <form action="/action.php" autocomplete="on">
+        First name:<input type="text" name="fname"><br><br>
+        Last name:<input type="text" name="lname"><br><br>
+        <input  type="submit" style="color: rgb(93, 33, 183);">
+    </form>
+
+    <p>Click the button to discover your loction</p>
+
+    <button onclick="getLoction()" style="color: rgb(93, 33, 183);">Try It</button>
+
+    <P id="demo"></P>
+
+    <script>
+        var x = document.getElementById("demo");
+
+        function getLoction(){
+            if (navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } 
+            else
+            {
+                x.innerHTML = "Geolocation is not supported by this browser";
+            }
+        }
+
+        function showPosition(position)
+        {
+            x.innerHTML = "Vatitude: " + position.coords.latitude + 
+            "<br>Longitude: " + position.coords.longitude;
+        }
+    </script>
+
+</body>
+</html>
